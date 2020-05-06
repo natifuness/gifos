@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/darktheme.css" />
+        <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+        <title> PROYECTO GIFT IOS2</title>
+    </head>
+
+    <body class="">
+        <header>
+            <p class="barra">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </header>
+    <section id="principal">
+        <a class="logo" alt="esto es un logo"></a>
+        <div class="botonera">
+            <div class="botones">
+                <li class="bloque">
+                    <a onClick="abrirCrear()"class="rosa">Crear Gifos</a>
+                </li>
+                <li class="bloque2">
+                    <span class="boton1">Elegir Tema</span>
+                    <img class="botonflecha" src="./assets/dropdown.svg" alt="dropwdown icono">
+                </li>
+                <li class="downflecha">
+                    <img src="assets/dropdown.svg" alt="flecha">
+                    <div class="temas">
+                        <a href="#" id="dia">Sailor Day</a>
+                        <a href="#" id="noche">Sailor Night</a>
+                    </div>
+                </li>
+                <li class="bloque">
+                    <button class="mios"><span class="under">M</span>is Guifos</button>
+                </li>
+            </div>
+        </div>
+    </section>
+
+    <section id="buscador">
+        <div class="box">
+            <p class="titulobusqueda">Buscar</p>
+            <input type="search" id="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+            <button id="btn_go" type="submit" onClick="busqueda()"><img class="lupa" src="assets/lupa_inactive.svg" alt="S" />Buscar</button>
+        </div>
+    </section>
+    <section id="sugerencia">
+        <div class="boxsug">
+            <input type="text" class="sugerencias" placeholder="Hoy te sugerimos:">
+        </div>
+        <div class="contenedor1">
+            <div class="imgsugerencias">
+                <p class="titulosug"></p>
+                <img id="imgsug">
+            </div>
+            <div class="imgsugerencias">
+                <p class="titulosug"></p>
+                <img id="imgsug2">
+            </div>
+            <div class="imgsugerencias">
+                <p class="titulosug"></p>
+                <img id="imgsug">
+            </div>
+            <div class="imgsugerencias">
+                <p class="titulosug"></p>
+                <img id="imgsug">
+            </div>
+        </div>
+
+    </section>
+    
+    <section id="tendencia">
+        <div class="boxtend">
+            <input type="text" class="tendencias" placeholder="Tendencias:">
+        </div>
+        <div id="searchForm"></div>
+    </section>
+
+    <script type="text/javascript" src="javascript/gifs.js"></script>
+    <script type="text/javascript" src="javascript/thems.js"></script>
+    </body>
+</html>
